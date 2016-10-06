@@ -3,19 +3,19 @@
 
 class Wut{
 public:
-	float numberOfPizzas;	//number of total pizzas
-	int slicesPerPizza;		//slices per each pizza
-	int numberOfPeople;		//total number of people
-	float costPerPizza;		//cost per each pizza
-	float splitBill = 0;		//the cost that each person would have to pay
-	float totalBill;		//the total money that the transaction will cost
-	float slicesPerPerson;		//the number of slices that each person wants in a equal split situation
-	std::string typeOfSplit;		//the type of split decider
-	int totSlices = 0;		//total number of slices
-	int *slicepparr;
-	float sliceShare;
-   	int loopNumber = 1;
-   	std::string loopChoice;
+    float numberOfPizzas;	//number of total pizzas
+    int slicesPerPizza;		//slices per each pizza
+    int numberOfPeople;		//total number of people
+    float costPerPizza;		//cost per each pizza
+    float splitBill = 0;		//the cost that each person would have to pay
+    float totalBill;		//the total money that the transaction will cost
+    float slicesPerPerson;		//the number of slices that each person wants in a equal split situation
+    std::string typeOfSplit;		//the type of split decider
+    int totSlices = 0;		//total number of slices
+    int *slicepparr;
+    float sliceShare;
+    int loopNumber = 1;
+    std::string loopChoice;
 };
 
 int main() {
