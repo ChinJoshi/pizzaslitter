@@ -3,7 +3,7 @@
 
 class Wut{
 public:
-    float numberOfPizzas;	//number of total pizzas
+	float numberOfPizzas;	//number of total pizzas
 	int slicesPerPizza;		//slices per each pizza
 	int numberOfPeople;		//total number of people
 	float costPerPizza;		//cost per each pizza
