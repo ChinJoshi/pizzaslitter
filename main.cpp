@@ -14,8 +14,8 @@ public:
 	int totSlices = 0;		//total number of slices
 	int *slicepparr;
 	float sliceShare;
-    int loopNumber = 1;
-    std::string loopChoice;
+   	int loopNumber = 1;
+   	std::string loopChoice;
 };
 
 int main() {
@@ -49,11 +49,11 @@ int main() {
                     std::cin >> foo.slicepparr[y];
                     foo.totSlices += foo.slicepparr[y];
                 }
-                foo.numberOfPizzas =static_cast<float>(foo.totSlices / foo.slicesPerPizza);
-                std::cout << "The total number of slices are " << foo.totSlices << std::endl;
-                std::cout << "The number of pizzas you will need to order is " << foo.numberOfPizzas << std::endl;
-                foo.totalBill = foo.numberOfPizzas*foo.costPerPizza;
-                std::cout << "The total bill will be $" << foo.totalBill<<std::endl;
+             foo.numberOfPizzas =static_cast<float>(foo.totSlices / foo.slicesPerPizza);
+             std::cout << "The total number of slices are " << foo.totSlices << std::endl;
+             std::cout << "The number of pizzas you will need to order is " << foo.numberOfPizzas << std::endl;
+             foo.totalBill = foo.numberOfPizzas*foo.costPerPizza;
+             std::cout << "The total bill will be $" << foo.totalBill<<std::endl;
                 for (int y = 0; y <= foo.numberOfPeople; y++) {
                     foo.sliceShare = static_cast<float>(foo.slicepparr[y])/static_cast<float>(foo.totSlices);
                     foo.splitBill = foo.sliceShare*foo.totalBill;
@@ -63,7 +63,7 @@ int main() {
         }else if (foo.loopChoice == "quit"){
             break;
         }
-	}
+    }
 	return 0;
 }
 
